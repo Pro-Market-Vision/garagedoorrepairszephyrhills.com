@@ -1,0 +1,83 @@
+---
+const services = [
+  { name: "Garage Door Installations", href: "#services" },
+  { name: "Garage Door Opener Repair", href: "#services" },
+  { name: "Commercial Garage Door Services", href: "#services" },
+  { name: "Garage Door Spring Repair", href: "#services" },
+  { name: "Garage Door Keypad Repair", href: "#services" },
+  { name: "Emergency Garage Door Services", href: "#services" },
+];
+---
+
+<div class="bg-primary text-white text-sm py-2">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+    <span>6719 Gall Blvd, Zephyrhills, FL 33542</span>
+    <div class="flex gap-4">
+      <a href="tel:4075578876" class="hover:underline">407-557-8876</a>
+      <a href="tel:8137987764" class="hover:underline font-semibold">813-798-7764</a>
+    </div>
+  </div>
+</div>
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-20">
+    <a href="/" class="flex-shrink-0">
+      <img src="/images/logo.png" alt="ASAP Zephyrhills Garage Door Repair" class="h-14 w-auto" />
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-8">
+      <div class="relative group">
+        <button class="font-heading text-lg tracking-wide text-primary hover:text-accent flex items-center gap-1 py-2">
+          SERVICES
+          <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+        </button>
+        <div class="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <div class="bg-white shadow-xl rounded-lg py-2 min-w-[280px] border border-gray-100">
+            {services.map((s) => (
+              <a href={s.href} class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-primary transition-colors">{s.name}</a>
+            ))}
+          </div>
+        </div>
+      </div>
+      <a href="/about-us" class="font-heading text-lg tracking-wide text-primary hover:text-accent py-2">ABOUT US</a>
+      <a href="/contact" class="font-heading text-lg tracking-wide text-primary hover:text-accent py-2">CONTACT</a>
+    </nav>
+
+    <a href="tel:8137987764" class="hidden lg:inline-flex bg-accent text-white font-heading text-lg tracking-wide px-6 py-3 rounded hover:bg-red-700 transition-colors">CALL NOW</a>
+
+    <button id="mobile-menu-btn" class="lg:hidden p-2" aria-label="Open menu">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100">
+    <div class="px-4 py-4 space-y-3">
+      <div>
+        <button class="mobile-dropdown-btn w-full flex justify-between items-center font-heading text-lg tracking-wide text-primary py-2">
+          SERVICES
+          <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+        </button>
+        <div class="mobile-dropdown hidden pl-4 space-y-1 pb-2">
+          {services.map((s) => (
+            <a href={s.href} class="block text-sm text-gray-600 py-1">{s.name}</a>
+          ))}
+        </div>
+      </div>
+      <a href="/about-us" class="block font-heading text-lg tracking-wide text-primary py-2">ABOUT US</a>
+      <a href="/contact" class="block font-heading text-lg tracking-wide text-primary py-2">CONTACT</a>
+      <a href="tel:8137987764" class="block bg-accent text-white font-heading text-lg tracking-wide px-6 py-3 rounded text-center mt-4">CALL NOW</a>
+    </div>
+  </div>
+</header>
+
+<script>
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn?.addEventListener('click', () => mobileMenu?.classList.toggle('hidden'));
+  document.querySelectorAll('.mobile-dropdown-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.nextElementSibling?.classList.toggle('hidden');
+      btn.querySelector('svg')?.classList.toggle('rotate-180');
+    });
+  });
+</script>
