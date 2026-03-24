@@ -3,27 +3,30 @@ import Layout from '../layouts/Layout.astro';
 import ContactForm from '../components/ContactForm.astro';
 ---
 
-<Layout title="Contact Us | ASAP Zephyrhills Garage Door Repair">
+<Layout
+  title="Contact Us | ASAP Zephyrhills Garage Door Repair"
+  description="Contact ASAP Zephyrhills Garage Door Repair for a free estimate. Expert garage door repair, installation & 24/7 emergency service in Zephyrhills, FL. Call (813) 798-7764."
+>
   <section class="relative bg-primary text-white py-20 md:py-24">
     <div class="relative max-w-7xl mx-auto px-4 text-center">
-      <h1 class="font-heading text-5xl md:text-6xl tracking-wide mb-4">Contact</h1>
+      <h1 class="font-heading text-5xl md:text-6xl tracking-wide mb-4">Contact ASAP Zephyrhills Garage Door Repair</h1>
     </div>
   </section>
 
   <section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       <div>
-        <h2 class="font-heading text-4xl tracking-wide text-primary mb-4">Contact Us in Garage Door in ASAP Zephyrhills</h2>
+        <h2 class="font-heading text-4xl tracking-wide text-primary mb-4">Get a Free Garage Door Repair Estimate</h2>
         <p class="text-gray-600 leading-relaxed mb-6">
-          Contact ASAP Zephyrhills for expert garage door repair services. Our team is ready to handle all your garage door needs with fast, reliable, and affordable solutions. Reach out today!
+          Contact ASAP Zephyrhills for expert <a href="/" class="text-accent hover:underline">garage door repair</a> services. Our team is ready to handle all your garage door needs with fast, reliable, and affordable solutions. We offer 24/7 emergency service and free estimates. Reach out today!
         </p>
-        <a href="/about-us" class="inline-flex bg-primary text-white font-heading text-lg tracking-wide px-6 py-3 rounded hover:bg-dark transition-colors">LEARN MORE</a>
+        <a href="/about-us" class="inline-flex bg-primary text-white font-heading text-lg tracking-wide px-6 py-3 rounded hover:bg-dark transition-colors">LEARN MORE ABOUT US</a>
       </div>
       <div>
-        <img src="/images/hero.jpg" alt="Contact Us" class="rounded-lg shadow-lg w-full" />
+        <img src="/images/hero.jpg" alt="ASAP Zephyrhills garage door repair service location" class="rounded-lg shadow-lg w-full" loading="lazy" />
       </div>
     </div>
   </section>
 
-  <ContactForm />
+  <ContactForm heading="Get Your Free Garage Door Estimate" />
 </Layout>

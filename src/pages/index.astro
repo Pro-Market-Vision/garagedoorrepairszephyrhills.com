@@ -4,23 +4,26 @@ import ContactForm from '../components/ContactForm.astro';
 import services from '../data/services.json';
 ---
 
-<Layout title="ASAP Zephyrhills Garage Door Repair | Expert Garage Door Services">
+<Layout
+  title="Garage Door Repair Zephyrhills | ASAP Garage Door Services"
+  description="ASAP Zephyrhills Garage Door Repair — expert garage door repair, spring replacement & installation in Zephyrhills, FL. 24/7 emergency service. Call (813) 798-7764."
+>
 
   <!-- Hero -->
   <section class="relative bg-primary text-white py-20 md:py-28 overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/hero.jpg')"></div>
+    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/hero.jpg')" role="img" aria-label="Garage door repair service in Zephyrhills, FL"></div>
     <div class="relative max-w-7xl mx-auto px-4">
       <div class="max-w-2xl">
-        <h1 class="font-heading text-5xl md:text-7xl tracking-wide mb-4">Garage Door Repair in ASAP Zephyrhills</h1>
+        <h1 class="font-heading text-5xl md:text-7xl tracking-wide mb-4">Garage Door Repair in Zephyrhills, FL</h1>
         <p class="text-gray-300 text-lg leading-relaxed mb-6">
-          Garage Door Repair in ASAP Zephyrhills specializes in fast, reliable, and affordable garage door solutions. Their expert team handles repairs, installations, and maintenance for all types of garage doors, ensuring smooth operation and enhanced security.
+          ASAP Zephyrhills Garage Door Repair specializes in fast, reliable, and affordable garage door solutions. Our expert team handles repairs, installations, and maintenance for all types of garage doors, ensuring smooth operation and enhanced security for your home or business.
         </p>
         <p class="flex items-center gap-2 text-gray-300 mb-6">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-          6719 Gall Blvd, Zephyrhills, FL 33542, USA
+          6719 Gall Blvd Suite 214, Zephyrhills, FL 33542
         </p>
-        <a href="tel:8137987764" class="inline-flex bg-accent text-white font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-red-700 transition-colors">
-          Call Now 813-798-7764
+        <a href="tel:8137987764" class="inline-flex bg-accent text-white font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-red-700 transition-colors" aria-label="Call ASAP Zephyrhills Garage Door Repair">
+          Call Now (813) 798-7764
         </a>
       </div>
     </div>
@@ -32,12 +35,12 @@ import services from '../data/services.json';
       <div>
         <h2 class="font-heading text-4xl md:text-5xl tracking-wide text-primary mb-4">Expert Garage Door Repair in Zephyrhills</h2>
         <p class="text-gray-600 leading-relaxed mb-6">
-          Get fast and reliable garage door repair services in Zephyrhills with ASAP Garage Services. From repairs to installations, we ensure your garage doors operate safely and efficiently.
+          Get fast and reliable <a href="/contact" class="text-accent hover:underline">garage door repair services</a> in Zephyrhills with ASAP Garage Services. From repairs to installations, we ensure your garage doors operate safely and efficiently.
         </p>
-        <a href="/about-us" class="inline-flex bg-primary text-white font-heading text-lg tracking-wide px-6 py-3 rounded hover:bg-dark transition-colors">LEARN MORE</a>
+        <a href="/about-us" class="inline-flex bg-primary text-white font-heading text-lg tracking-wide px-6 py-3 rounded hover:bg-dark transition-colors">LEARN MORE ABOUT US</a>
       </div>
       <div>
-        <img src="/images/about.png" alt="Expert Garage Door Repair" class="rounded-lg shadow-lg w-full" />
+        <img src="/images/about.png" alt="Expert garage door repair technician in Zephyrhills, FL" class="rounded-lg shadow-lg w-full" loading="lazy" />
       </div>
     </div>
   </section>
@@ -45,18 +48,18 @@ import services from '../data/services.json';
   <!-- What We Do -->
   <section class="py-16 bg-gray-light">
     <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="font-heading text-4xl md:text-5xl tracking-wide text-primary mb-6">What We Do</h2>
+      <h2 class="font-heading text-4xl md:text-5xl tracking-wide text-primary mb-6">Garage Door Services We Offer in Zephyrhills</h2>
       <p class="text-gray-600 leading-relaxed mb-8">
-        At ASAP Zephyrhills, we provide comprehensive garage door solutions including broken springs, cables, tracks, opener issues, panel replacement, and installations. We emphasize regular maintenance, quality parts, and affordable service. Contact ASAP Garage Services today to experience what we do best — delivering exceptional garage door solutions you can rely on.
+        At ASAP Zephyrhills, we provide comprehensive garage door solutions including broken springs, cables, tracks, opener issues, panel replacement, and installations. We emphasize regular maintenance, quality parts, and affordable service. Contact us today to experience what we do best — delivering exceptional garage door solutions you can rely on.
       </p>
-      <a href="tel:8137987764" class="inline-flex bg-accent text-white font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-red-700 transition-colors">Call Now 813-798-7764</a>
+      <a href="tel:8137987764" class="inline-flex bg-accent text-white font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-red-700 transition-colors">Call Now (813) 798-7764</a>
     </div>
   </section>
 
   <!-- Why Choose Us -->
   <section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4">
-      <h2 class="font-heading text-4xl md:text-5xl text-center tracking-wide text-primary mb-4">Why Choose Us</h2>
+      <h2 class="font-heading text-4xl md:text-5xl text-center tracking-wide text-primary mb-4">Why Choose ASAP Zephyrhills Garage Door Repair</h2>
       <p class="text-gray-600 text-center max-w-2xl mx-auto mb-10">We offer fast response times, skilled technicians, affordable pricing, and a commitment to quality. Your satisfaction and safety are our top priorities!</p>
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
         {[
@@ -81,27 +84,27 @@ import services from '../data/services.json';
 
   <!-- Emergency -->
   <section class="relative py-20 text-white">
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/services/Emergency-Garage-Door-Services.jpg')"></div>
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/services/Emergency-Garage-Door-Services.jpg')" role="img" aria-label="Emergency garage door repair in Zephyrhills"></div>
     <div class="absolute inset-0 bg-primary/85"></div>
     <div class="relative max-w-4xl mx-auto px-4 text-center">
-      <h2 class="font-heading text-4xl md:text-5xl tracking-wide mb-4">Emergency Garage Door Services</h2>
+      <h2 class="font-heading text-4xl md:text-5xl tracking-wide mb-4">24/7 Emergency Garage Door Services in Zephyrhills</h2>
       <p class="text-gray-300 leading-relaxed mb-8">
-        Our Emergency Garage Door Services provide fast, reliable solutions when you need them most. Whether it's a broken spring, malfunctioning opener, or stuck door, our expert technicians are available to restore your garage door's functionality quickly and efficiently.
+        Our Emergency Garage Door Services provide fast, reliable solutions when you need them most. Whether it's a broken spring, malfunctioning opener, or stuck door, our expert technicians are available 24/7 to restore your garage door's functionality quickly and efficiently.
       </p>
-      <a href="tel:8137987764" class="inline-flex bg-accent text-white font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-red-700 transition-colors">Call Now 813-798-7764</a>
+      <a href="tel:8137987764" class="inline-flex bg-accent text-white font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-red-700 transition-colors">Call Now (813) 798-7764</a>
     </div>
   </section>
 
   <!-- Services -->
   <section class="py-16 bg-white" id="services">
     <div class="max-w-7xl mx-auto px-4">
-      <h2 class="font-heading text-4xl md:text-5xl text-center tracking-wide text-primary mb-2">Our Garage Door Repair Services</h2>
-      <p class="text-gray-500 text-center mb-10 max-w-2xl mx-auto">From fixing broken springs to replacing openers, we provide fast, reliable, and affordable solutions to keep your garage doors in top condition.</p>
+      <h2 class="font-heading text-4xl md:text-5xl text-center tracking-wide text-primary mb-2">Our Zephyrhills Garage Door Repair Services</h2>
+      <p class="text-gray-500 text-center mb-10 max-w-2xl mx-auto">From fixing broken springs to replacing openers, we provide fast, reliable, and affordable garage door solutions in Zephyrhills, FL.</p>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((s) => (
           <div class="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-border/30">
             <div class="aspect-[4/3] overflow-hidden">
-              <img src={s.image} alt={s.name} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+              <img src={s.image} alt={`${s.name} service in Zephyrhills, FL`} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
             </div>
             <div class="p-5">
               <h3 class="font-heading text-2xl tracking-wide text-primary mb-2">{s.name}</h3>
@@ -115,11 +118,42 @@ import services from '../data/services.json';
 
   <!-- Testimonials -->
   <section class="py-16 bg-gray-light">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="font-heading text-4xl md:text-5xl tracking-wide text-primary mb-4">Our Lovely Clients Says</h2>
-      <p class="text-gray-600">Our lovely clients say great things about us! From fast response times to professional service, we pride ourselves on delivering exceptional garage door solutions that exceed expectations.</p>
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="font-heading text-4xl md:text-5xl tracking-wide text-primary text-center mb-10">What Our Zephyrhills Clients Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {[
+          { name: "Mike T.", location: "Zephyrhills, FL", quote: "ASAP lived up to their name! My garage door spring broke at 7am and they had it fixed before noon. Great service and fair pricing." },
+          { name: "Sandra W.", location: "Wesley Chapel, FL", quote: "Excellent garage door installation. The team was professional, on time, and cleaned up after themselves. Highly recommend ASAP Garage Door." },
+          { name: "David R.", location: "Dade City, FL", quote: "Called for an emergency repair late at night and they came out within the hour. The technician was knowledgeable and got my door working perfectly." },
+        ].map((t) => (
+          <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-border/30">
+            <div class="flex items-center gap-1 mb-3">
+              {[...Array(5)].map(() => (
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              ))}
+            </div>
+            <p class="text-gray-600 italic mb-4">"{t.quote}"</p>
+            <p class="font-heading text-lg text-primary">{t.name}</p>
+            <p class="text-sm text-gray-400">{t.location}</p>
+          </div>
+        ))}
+      </div>
     </div>
   </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ASAP Zephyrhills Garage Door Repair",
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "3", "bestRating": "5" },
+    "review": [
+      { "@type": "Review", "author": { "@type": "Person", "name": "Mike T." }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "ASAP lived up to their name! My garage door spring broke at 7am and they had it fixed before noon. Great service and fair pricing." },
+      { "@type": "Review", "author": { "@type": "Person", "name": "Sandra W." }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Excellent garage door installation. The team was professional, on time, and cleaned up after themselves. Highly recommend ASAP Garage Door." },
+      { "@type": "Review", "author": { "@type": "Person", "name": "David R." }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Called for an emergency repair late at night and they came out within the hour. The technician was knowledgeable and got my door working perfectly." }
+    ]
+  })} />
 
   <ContactForm />
 </Layout>

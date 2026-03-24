@@ -6,9 +6,11 @@ import Footer from '../components/Footer.astro';
 interface Props {
   title: string;
   description?: string;
+  noindex?: boolean;
 }
 
-const { title, description = "ASAP Zephyrhills Garage Door Repair - Fast, reliable garage door repair, installation, and maintenance in Zephyrhills, FL. 24/7 emergency service. Call 813-798-7764." } = Astro.props;
+const { title, description = "ASAP Zephyrhills Garage Door Repair — fast, reliable garage door repair, installation & spring replacement in Zephyrhills, FL. 24/7 emergency service. Call (813) 798-7764.", noindex = false } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 <!doctype html>
 <html lang="en">
@@ -16,11 +18,59 @@ const { title, description = "ASAP Zephyrhills Garage Door Repair - Fast, reliab
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.ico" />
+    <link rel="canonical" href={canonicalURL.href} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL.href} />
+    <meta property="og:site_name" content="ASAP Zephyrhills Garage Door Repair" />
+    <meta property="og:image" content={new URL('/images/logo.png', Astro.site).href} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL('/images/logo.png', Astro.site).href} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>{title}</title>
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ASAP Zephyrhills Garage Door Repair",
+      "description": "Expert garage door repair, installation, spring replacement, and opener repair services in Zephyrhills, FL. 24/7 emergency service available.",
+      "url": "https://garagedoorrepairszephyrhills.com",
+      "telephone": "+1-813-798-7764",
+      "image": "https://garagedoorrepairszephyrhills.com/images/logo.png",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "6719 Gall Blvd Suite 214",
+        "addressLocality": "Zephyrhills",
+        "addressRegion": "FL",
+        "postalCode": "33542",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 28.2336,
+        "longitude": -82.1812
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Zephyrhills" },
+        { "@type": "City", "name": "Wesley Chapel" },
+        { "@type": "City", "name": "Dade City" },
+        { "@type": "City", "name": "Land O' Lakes" },
+        { "@type": "City", "name": "Tampa" }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": []
+    })} />
   </head>
   <body class="font-body text-gray-800 antialiased">
     <Header />
