@@ -1,0 +1,59 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  title="Garage Door Repair Blog | ASAP Zephyrhills Garage Door Repair"
+  description="Expert tips, cost guides, and maintenance advice for garage doors in Zephyrhills, FL. Stay informed with the ASAP Garage Door Repair blog."
+  keywords="garage door blog, garage door repair tips, Zephyrhills garage door, garage door maintenance, Florida garage door"
+>
+  <section class="relative bg-primary text-white py-20 md:py-24">
+    <div class="relative max-w-7xl mx-auto px-4 text-center">
+      <h1 class="font-heading text-5xl md:text-6xl tracking-wide mb-4">Garage Door Repair Blog</h1>
+      <p class="text-gray-300 text-lg max-w-2xl mx-auto">Expert tips, cost guides, and maintenance advice for homeowners in Zephyrhills and surrounding areas.</p>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {[
+          {
+            title: "Garage Door Repair Cost in Zephyrhills, FL (2025 Price Guide)",
+            slug: "garage-door-repair-cost-zephyrhills",
+            excerpt: "Find out how much garage door repair costs in Zephyrhills. We break down pricing for springs, openers, panels, and more."
+          },
+          {
+            title: "Hurricane-Proof Garage Doors: Protecting Your Zephyrhills Home",
+            slug: "hurricane-proof-garage-doors-florida",
+            excerpt: "Learn how hurricane-rated garage doors protect your Florida home and what options are available for Zephyrhills homeowners."
+          },
+          {
+            title: "5 Garage Door Maintenance Tips Every Florida Homeowner Should Know",
+            slug: "garage-door-maintenance-tips",
+            excerpt: "Keep your garage door running smoothly year-round with these essential maintenance tips for Florida's unique climate."
+          }
+        ].map((post) => (
+          <a href={`/blog/${post.slug}`} class="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-border/30">
+            <div class="p-6">
+              <h2 class="font-heading text-xl tracking-wide text-primary mb-3 group-hover:text-accent transition-colors">{post.title}</h2>
+              <p class="text-gray-600 text-sm leading-relaxed mb-4">{post.excerpt}</p>
+              <span class="inline-flex items-center gap-1 text-accent font-heading text-sm tracking-wide group-hover:gap-2 transition-all duration-300">
+                READ MORE
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-light">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="font-heading text-4xl tracking-wide text-primary mb-4">Need Garage Door Repair Now?</h2>
+      <p class="text-gray-600 mb-8">Our expert technicians are standing by for fast, affordable service in Zephyrhills and surrounding areas.</p>
+      <a href="tel:8137987764" class="inline-flex bg-accent text-white font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-red-700 transition-colors">Call (813) 798-7764</a>
+    </div>
+  </section>
+</Layout>

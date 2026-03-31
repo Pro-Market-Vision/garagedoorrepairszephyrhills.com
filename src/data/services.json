@@ -2,37 +2,37 @@
   {
     "name": "Garage Door Installations",
     "description": "Our Garage Door Installation services provide expert solutions for new installations or replacements. We offer a wide selection of high-quality doors, ensuring a perfect fit for your home or business.",
-    "image": "/images/services/Garage-Door-Installations.jpg",
+    "image": "/images/services/Garage-Door-Installations.webp",
     "slug": "garage-door-installations"
   },
   {
     "name": "Garage Door Opener Repair",
     "description": "Our Garage Door Opener Repair service ensures your opener is working smoothly and reliably. Whether it's a malfunctioning motor, faulty sensors, or electrical issues, our expert technicians diagnose and repair all types of opener problems.",
-    "image": "/images/services/Garage-Door-Opener-Repair.jpg",
+    "image": "/images/services/Garage-Door-Opener-Repair.webp",
     "slug": "garage-door-opener-repair"
   },
   {
     "name": "Commercial Garage Door Services",
     "description": "Our Commercial Garage Door Services provide reliable repair, installation, and maintenance for businesses. From rolling steel doors to high-performance systems, we ensure your commercial garage doors are secure, functional, and efficient.",
-    "image": "/images/services/Commercial-Garage-Door-Services.jpg",
+    "image": "/images/services/Commercial-Garage-Door-Services.webp",
     "slug": "commercial-garage-door-services"
   },
   {
     "name": "Garage Door Spring Repair",
     "description": "Our Garage Door Spring Repair service fixes broken or damaged springs to restore proper door function. Whether it's a torsion or extension spring, our expert technicians provide fast, safe repairs.",
-    "image": "/images/services/Garage-Door-Spring-Repair.jpg",
+    "image": "/images/services/Garage-Door-Spring-Repair.webp",
     "slug": "garage-door-spring-repair"
   },
   {
     "name": "Garage Door Keypad Repair",
     "description": "Our Garage Door Keypad Repair service fixes faulty or unresponsive keypads, restoring easy and secure access to your garage. Whether it's a wiring issue or a malfunctioning component, our expert technicians quickly diagnose and repair the problem.",
-    "image": "/images/services/Garage-Door-Keypad-Repair.jpg",
+    "image": "/images/services/Garage-Door-Keypad-Repair.webp",
     "slug": "garage-door-keypad-repair"
   },
   {
     "name": "Emergency Garage Door Services",
     "description": "Our Emergency Garage Door Services provide fast, reliable solutions when you need them most. Whether it's a broken spring, malfunctioning opener, or stuck door, our expert technicians are available to restore your garage door's functionality quickly and efficiently.",
-    "image": "/images/services/Emergency-Garage-Door-Services.jpg",
+    "image": "/images/services/Emergency-Garage-Door-Services.webp",
     "slug": "emergency-garage-door-services"
   }
 ]

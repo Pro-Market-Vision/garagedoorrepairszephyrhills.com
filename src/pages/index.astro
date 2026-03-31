@@ -11,7 +11,7 @@ import services from '../data/services.json';
 
   <!-- Hero -->
   <section class="relative bg-primary text-white py-24 md:py-32 overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/hero.jpg')" role="img" aria-label="Garage door repair service in Zephyrhills, FL"></div>
+    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/hero.webp')" role="img" aria-label="Garage door repair service in Zephyrhills, FL"></div>
     <div class="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/70"></div>
     <div class="relative max-w-7xl mx-auto px-4">
       <div class="max-w-2xl">
@@ -101,7 +101,7 @@ import services from '../data/services.json';
 
   <!-- What We Do -->
   <section class="relative py-20 text-white text-center overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/services/Garage-Door-Installations.jpg')"></div>
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/services/Garage-Door-Installations.webp')"></div>
     <div class="absolute inset-0 bg-primary/90"></div>
     <div class="relative max-w-4xl mx-auto px-4 text-center">
       <h2 class="font-heading text-4xl md:text-5xl tracking-wide mb-6">Garage Door Services We Offer in Zephyrhills</h2>
@@ -140,7 +140,7 @@ import services from '../data/services.json';
 
   <!-- Emergency -->
   <section class="relative py-20 text-white">
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/services/Emergency-Garage-Door-Services.jpg')" role="img" aria-label="Emergency garage door repair in Zephyrhills"></div>
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/services/Emergency-Garage-Door-Services.webp')" role="img" aria-label="Emergency garage door repair in Zephyrhills"></div>
     <div class="absolute inset-0 bg-primary/85"></div>
     <div class="relative max-w-4xl mx-auto px-4 text-center">
       <h2 class="font-heading text-4xl md:text-5xl tracking-wide mb-4">24/7 Emergency Garage Door Services in Zephyrhills</h2>
@@ -212,6 +212,92 @@ import services from '../data/services.json';
       { "@type": "Review", "author": { "@type": "Person", "name": "Mike T." }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "ASAP lived up to their name! My garage door spring broke at 7am and they had it fixed before noon. Great service and fair pricing." },
       { "@type": "Review", "author": { "@type": "Person", "name": "Sandra W." }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Excellent garage door installation. The team was professional, on time, and cleaned up after themselves. Highly recommend ASAP Garage Door." },
       { "@type": "Review", "author": { "@type": "Person", "name": "David R." }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Called for an emergency repair late at night and they came out within the hour. The technician was knowledgeable and got my door working perfectly." }
+    ]
+  })} />
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-white" id="faq">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="font-heading text-4xl md:text-5xl text-center tracking-wide text-primary mb-10">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        {[
+          {
+            q: "How much does garage door repair cost in Zephyrhills?",
+            a: "Garage door repair costs in Zephyrhills typically range from $100 to $350 depending on the issue. Spring replacements average $150-$300, opener repairs $100-$250, and panel replacements $200-$500. Contact ASAP Zephyrhills Garage Door Repair for a free, no-obligation estimate tailored to your specific needs."
+          },
+          {
+            q: "Do you offer same-day garage door repair?",
+            a: "Yes! ASAP Zephyrhills Garage Door Repair offers same-day service for most repairs. We understand that a broken garage door disrupts your daily routine, so our technicians are dispatched quickly to get your door working again as fast as possible. Call us at (813) 798-7764 for prompt service."
+          },
+          {
+            q: "What areas do you serve near Zephyrhills?",
+            a: "We proudly serve Zephyrhills and the surrounding communities including Wesley Chapel, Dade City, Land O' Lakes, and Tampa. Our service area covers all of eastern Pasco County and nearby parts of Hillsborough County, ensuring fast response times throughout the region."
+          },
+          {
+            q: "How long does garage door spring replacement take?",
+            a: "A typical garage door spring replacement takes 30 minutes to 1 hour for our experienced technicians. Torsion spring replacements may take slightly longer than extension springs. We carry common spring sizes on our trucks so most repairs are completed in a single visit."
+          },
+          {
+            q: "Do you provide emergency garage door service?",
+            a: "Absolutely. ASAP Zephyrhills Garage Door Repair offers 24/7 emergency garage door services. Whether your door is stuck open, a spring broke in the middle of the night, or you have a security concern, our emergency team is available around the clock to help. Call (813) 798-7764 anytime."
+          }
+        ].map((faq) => (
+          <details class="group bg-gray-light rounded-lg border border-gray-border/30">
+            <summary class="flex items-center justify-between cursor-pointer p-6 font-heading text-lg tracking-wide text-primary">
+              {faq.q}
+              <svg class="w-5 h-5 text-accent transition-transform group-open:rotate-180 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600 leading-relaxed">{faq.a}</div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does garage door repair cost in Zephyrhills?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Garage door repair costs in Zephyrhills typically range from $100 to $350 depending on the issue. Spring replacements average $150-$300, opener repairs $100-$250, and panel replacements $200-$500. Contact ASAP Zephyrhills Garage Door Repair for a free, no-obligation estimate tailored to your specific needs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer same-day garage door repair?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! ASAP Zephyrhills Garage Door Repair offers same-day service for most repairs. We understand that a broken garage door disrupts your daily routine, so our technicians are dispatched quickly to get your door working again as fast as possible. Call us at (813) 798-7764 for prompt service."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What areas do you serve near Zephyrhills?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We proudly serve Zephyrhills and the surrounding communities including Wesley Chapel, Dade City, Land O' Lakes, and Tampa. Our service area covers all of eastern Pasco County and nearby parts of Hillsborough County, ensuring fast response times throughout the region."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does garage door spring replacement take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A typical garage door spring replacement takes 30 minutes to 1 hour for our experienced technicians. Torsion spring replacements may take slightly longer than extension springs. We carry common spring sizes on our trucks so most repairs are completed in a single visit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide emergency garage door service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. ASAP Zephyrhills Garage Door Repair offers 24/7 emergency garage door services. Whether your door is stuck open, a spring broke in the middle of the night, or you have a security concern, our emergency team is available around the clock to help. Call (813) 798-7764 anytime."
+        }
+      }
     ]
   })} />
 
